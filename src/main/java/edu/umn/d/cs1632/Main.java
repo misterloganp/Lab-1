@@ -8,10 +8,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("File of data to read in: ");
-        String fileName = scanner.nextLine();
-
-        MArray mArray = new MArray(fileName);
+        MArray mArray = new MArray("src/data/simple.csv");
 
         System.out.println("Data:");
         mArray.printData();
